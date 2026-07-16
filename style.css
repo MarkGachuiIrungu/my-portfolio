@@ -87,3 +87,34 @@ nav a:hover {
 #topBtn:hover {
     background: #003d80;
 }
+@media (max-width: 768px) {
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+}
