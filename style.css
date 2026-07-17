@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #0f0f0eea;
@@ -31,6 +34,7 @@ a:hover {
     background: white;
     padding: 30px;
     border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
 }
 strong {
     display: block;
@@ -54,7 +58,9 @@ nav a {
 
 nav a:hover {
     color: yellow;
+    transition: 0.3s;
 }
+
 .profile-pic {
     width: 210px;
     height: 225px;
@@ -70,6 +76,11 @@ nav a:hover {
     border-radius: 20px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     border-left: 5px solid #2e2d33;
+}
+
+.card:hover{
+    transform: translate Y(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 #topBtn {
     position: fixed;
@@ -117,4 +128,37 @@ nav a:hover {
         font-size: 1.6rem;
     }
 
+}
+.project-card {
+    background: #f8f9fa;
+    padding: 20px;
+    margin-top: 20px;
+    border-left: 5px solid #0056b3;
+    border-radius: 10px;
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    background: #0056b3;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
